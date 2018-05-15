@@ -63,10 +63,25 @@
 					'left': ($(window).width() - opts.width) / 2,
 					'top': ($(document).height() - opts.height) / 2,
 					'z-index': 9999
-				})
-				$(".modal-body").css({
-					 height: opts.height - 115
 				});
+				//设置模态框样式
+				$(".modal-body").css({
+					 'height': opts.height - 115
+				});
+				$(".modal-header").css({
+					'background-color': '#5180D6',
+					'color': '#fff'
+				})
+				$(".modal-header").find("button").css({
+					'background-color':'rgba(255,255,255,0.15)',
+					'color':'#fff',
+					'margin-left': '8px',
+					'width': '22px',
+					'text-align': 'center',
+					'display': 'block',
+					'outline': 'none'
+				})
+				
 				//显示模态框
 				modal.modal('show');
 				
@@ -95,22 +110,34 @@
 						}
 					}
 				});
+
+				//当点击全屏按钮
+				$('.fullscreen').click(function(){
+					var state = $(this).attr('data-state')
+					if(state == undefined){
+						$(".modal-content").css('width', '1000px');
+						$(".modal-content").css('height', '800px');
+					}
+					
+				});
 				
 			},
 			dHtml: function(o){
 				var html =
 				'<div id="shade" style=" background-color: #000;bottom: 0;left: 0;position: fixed;right: 0;top: 0;transition: opacity 0.15s linear 0s;opacity: 0.5;">'+'</div>'
-				+'<div id="' + o.id + '" class="modal fade">'
+				+'<div id="' + o.id + '" class="modal fade" style="border-radus">'
 					+'	 <div class="modal-dialog" style="display:table-cell">'
-					+'	 	<div class="modal-content" style="width:' + o.width + 'px;height:' + o.height + 'px;">'
+					+'	 	<div class="modal-content" style="width:' + o.width + 'px;height:' + o.height + 'px;border-radius:0px;">'
 					+'	 		<div class="modal-header">'
-					+'	 			<button type="button" class="close" data-dismiss="modal" >'
-					+'	 				<span aria-hidden="true">&times;</span>'
-					+'	 				<span class="sr-only">Close</span>'
+					+'	 			<button type="button" class="btn btn-xs pull-right" data-dismiss="modal">'
+					+'	 				<i class="fa fa-remove"></i>'
+					+'	 			</button>'
+					+'	 			<button type="button" class="btn btn-xs pull-right fullscreen">'
+					+'	 				<i class="fa fa-arrows-alt"></i>'
 					+'	 			</button>'
 					+'	 			<h4 id="myModalLabel" class="modal-title">' + o.title + '</h4>'
 					+'	 		</div>'
-					+'	 		<div class="modal-body" >'
+					+'	 		<div class="modal-body" style="overflow:auto;">'
 					+'	 			<p>正在加载...</p>'
 					+'	 		</div>'
 					+'	 		<div class="modal-footer">'
