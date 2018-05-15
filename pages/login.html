@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<title>昱盛教育城-登录</title>
+		<link rel="stylesheet" href="/Bootstrap/custom/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="/Bootstrap/custom/css/admin/login.css" />
+		<link rel="stylesheet" href="/Bootstrap/custom/css/public/bootstrap-checkbox.css" />
+		<link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+		<!-- jQuery 3 -->
+		<script src="/Bootstrap/plugins/jquery/dist/jquery.min.js"></script>
+		<!-- Bootstrap 3.3.7 -->
+		<script src="/Bootstrap/plugins/bootstrap/dist/js/bootstrap.min.js"></script>
+		
+		<script type="text/javascript" src="/Bootstrap/plugins/jquery-form/jquery.form.min.js" ></script>
+		<script type="text/javascript" src="/Bootstrap/plugins/jquery-cookie/jquery.cookie.js" ></script>
+		<script type="text/javascript" src="/Bootstrap/custom/js/public/common.js" ></script>
+		<script type="text/javascript" src="/Bootstrap/plugins/jquery-validator/validator.js" ></script>
+		<script type="text/javascript" src="/Bootstrap/custom/js/admin/login.js" ></script>
+	</head>
+	<body class="bg-info">
+		<!-- 登录区 -->
+		<div class="container">
+			<div class="form row">
+				<form method="post" action="/login">
+					<div class="col-md-12">
+						<!-- LOGO区 -->
+						<div class="logo_area text-center">
+							<img src="/Bootstrap/custom/img/login-logo.png" />
+						</div>
+						<!-- 错误提示区 -->
+						<div class="danger" role="alert"></div>
+						<!-- 账号输入框区-->
+	                    <div class="form-group">
+                    		<i class="fa fa-user fa-lg"></i>
+				 			<input type="text" name="username" class="form-control required" placeholder="请输入账号">		
+                    	</div>
+                    	<!-- 密码输入框区 -->
+	                    <div class="form-group">
+	                    	<i class="fa fa-lock fa-lg"></i>
+                            <input type="password" name="password" class="form-control required" placeholder="请输入密码">
+                        </div>
+                        <!-- 记住密码区 -->
+	                    <div class="pull-right checkbox-custom checkbox-default">
+                            <input type="checkbox" id="RememberMe">
+                        	<label for="RememberMe">记住我</label>
+	                    </div>
+	                    <!-- 登录按钮区 -->
+	                    <div class="form-group">
+	                        <button type="submit" class="btn login_btn">登录</button>
+	                    </div>
+	                </div>
+                </form>
+			</div>
+		</div>
+		<!-- 登录区结束 -->
+	</body>
+</html>

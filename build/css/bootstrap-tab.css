@@ -1,0 +1,70 @@
+
+.wrapper .content-wrapper .content-tabs{
+    position: relative;
+    height: 42px;
+    font-size: 12px;
+    background-color: #2D59B2;
+}
+
+.content-wrapper .content-tabs nav.page-tabs {
+	margin-left: 40px;
+    width: 100000px;
+    height: 42px;
+    line-height: 42px;
+    overflow: hidden;
+    border: none;
+}
+
+.content-wrapper .content-tabs button{
+	border: none;
+	height: 42px;
+	outline: none;
+	background-color:rgba(255,255,255,0.15)
+}
+
+.content-wrapper .content-tabs .roll-nav{
+	top: 0px;
+	position: absolute;
+	width: 40px;
+	height: 42px;
+	text-align: center;
+	color: #fff;
+	z-index: 2;
+}
+.content-wrapper .content-tabs nav.page-tabs .page-tabs-content{
+	float: left;
+}
+.content-wrapper .content-tabs .page-tabs a{
+	width: 100px;
+	display: block;
+	float: left;
+	padding: 0px 10px;
+	padding-right: 8px;
+	text-decoration: none;
+	margin: 0px 1px;
+	color: #fff;
+	font-size: 14px;
+	background-color:rgba(255,255,255,0.15)
+}
+.content-wrapper .content-tabs nav.page-tabs .page-tabs-content a.active{
+	color: #2D59B2;
+	background-color: #DFE6F3;
+}
+.content-wrapper .content-tabs .page-tabs a:first-child{
+	padding-right: 15px;
+}
+.content-wrapper .content-tabs .roll-left.tabLeft{
+	left: 0px;
+}
+.content-wrapper .content-tabs .roll-right.tabRight{
+	right: 120px;
+}
+.content-wrapper .content-tabs .roll-right.btn-group{
+	right: 40px;
+	width: 80px;
+	padding: 0px;
+}
+
+.content-wrapper .content-tabs .roll-right{
+	right: 0px;
+}

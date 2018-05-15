@@ -1,0 +1,43 @@
+.form{
+	width: 320px;
+	margin: 120px auto;
+	border-radius: 10px;;
+	box-shadow: #94BCD0 0px 0px 10px 1px;
+	background-color: white;
+}
+.form .form-group{
+	display: block;
+	margin-bottom: 5px;
+}
+.form .logo_area{
+	padding-top: 20px;
+}
+.form .checkbox-default{
+	margin-top: 10px;
+}
+.fa{
+	display: inline-block;
+	top: 27px;
+	left: 6px;
+	position: relative;
+	color: #3293FA;
+}
+input[type="text"],input[type="password"]{
+	padding-left:26px;
+	border-radius: 5px;;
+	box-shadow: none;
+}
+input[type="text"]:focus,input[type="password"]:focus{
+	box-shadow: none;
+	border: 1px solid #ccc;
+}
+button[class="btn login_btn"]{
+	background-color: #3280E8;
+	color: white;
+	width: 100%;
+	border-radius: 5px;
+	font-size: 16px;
+	border: none;
+	margin: 20px 0px 40px 0px;
+	box-shadow: #0056FF 0px 0px 1px 1px;
+}

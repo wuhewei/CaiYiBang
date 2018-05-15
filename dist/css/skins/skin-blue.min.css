@@ -1,0 +1,168 @@
+/* 顶部导航栏 */
+.skin-blue .main-header .navbar {
+	background-color: #2D59B2;
+	border-bottom: 2px solid #A1BCEB;
+	margin-left: 0px;
+	height: 75px;
+	padding-top: 12px;
+	position: static;
+}
+/* 顶部导航栏 字体为白色 */
+.skin-blue .main-header .navbar .nav>li>a {
+	color: #fff
+}
+.skin-blue .main-header .navbar .nav>li:first-child>a{
+	font-size: 18px;
+}
+
+.skin-blue .main-header .navbar .nav>li>a:hover,
+.skin-blue .main-header .navbar .nav>li>a:active,
+.skin-blue .main-header .navbar .nav>li>a:focus,
+.skin-blue .main-header .navbar .nav .open>a,
+.skin-blue .main-header .navbar .nav .open>a:hover,
+.skin-blue .main-header .navbar .nav .open>a:focus,
+.skin-blue .main-header .navbar .nav>.active>a {
+	background: rgba(0, 0, 0, 0.1);
+	color: #f6f6f6
+}
+/* 用户菜单第一个不参与改变样式 */
+.skin-blue .main-header .navbar .nav>li:first-child>a:hover{
+	cursor: default;
+	background: #2D59B2;
+	color: #fff;
+}
+
+/* 顶部logo */
+.skin-blue .main-header .logo {
+	background-color: #2D59B2;
+	color: #fff;
+	height: 73px;
+	padding-top: 10px;
+}
+.skin-blue .main-header .logo span{
+	display: inline-block;
+}
+
+.skin-blue .main-header li.user-header {
+	background-color: #3c8dbc
+}
+
+.skin-blue .content-header {
+	background: transparent
+}
+
+.skin-blue .wrapper,
+.skin-blue .main-sidebar,
+.skin-blue .left-side {
+	background-color: #5888DD
+}
+.skin-blue .user-panel>.info,
+.skin-blue .user-panel>.info>a {
+	color: #fff
+}
+.skin-blue .sidebar-menu>li{
+	cursor: pointer;
+}
+.skin-blue .sidebar-menu>li.header {
+	color: #fff;
+	background: #2D59B2;
+	border-bottom: none;
+	text-align: center;
+}
+.skin-blue .sidebar-menu>li>a {
+	border-left: 3px solid transparent
+}
+
+.skin-blue .sidebar-menu>li:hover>a,
+.skin-blue .sidebar-menu>li.active>a,
+.skin-blue .sidebar-menu>li.menu-open>a {
+	color: white;
+	background: #2D59B2
+}
+
+.skin-blue .sidebar-menu>li.active>a {
+	border-left-color: #3c8dbc
+}
+
+.skin-blue .sidebar-menu>li>.treeview-menu {
+	background: #5888DD
+}
+
+.skin-blue .sidebar a {
+	color: #fff;
+	font-size: 16px;
+}
+
+.skin-blue .sidebar a:hover {
+	text-decoration: none
+}
+.skin-blue .sidebar-menu .treeview-menu>li{
+	padding-left: 25px;
+	background-color: #77A6E8;
+	cursor: pointer;
+}
+.skin-blue .sidebar-menu .treeview-menu>li a{
+	font-size: 14px;
+}
+.skin-blue .sidebar-menu .treeview-menu>li:hover{
+	background-color: #F5FAFF;
+}
+
+.skin-blue .sidebar-menu .treeview-menu>li.active>a,
+.skin-blue .sidebar-menu .treeview-menu>li>a:hover {
+	color: #2D59B2;
+	
+}
+.skin-blue .sidebar-menu .treeview-menu>li>a:focus {
+	color: #2D59B2;
+}
+
+.skin-blue .sidebar-form {
+	border-radius: 3px;
+	border: 1px solid #374850;
+	margin: 10px 10px
+}
+
+.skin-blue .sidebar-form input[type="text"],
+.skin-blue .sidebar-form .btn {
+	box-shadow: none;
+	background-color: #374850;
+	border: 1px solid transparent;
+	height: 35px
+}
+
+.skin-blue .sidebar-form input[type="text"] {
+	color: #666;
+	border-top-left-radius: 2px;
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+	border-bottom-left-radius: 2px
+}
+
+.skin-blue .sidebar-form input[type="text"]:focus,
+.skin-blue .sidebar-form input[type="text"]:focus+.input-group-btn .btn {
+	background-color: #fff;
+	color: #666
+}
+
+.skin-blue .sidebar-form input[type="text"]:focus+.input-group-btn .btn {
+	border-left-color: #fff
+}
+
+.skin-blue .sidebar-form .btn {
+	color: #999;
+	border-top-left-radius: 0;
+	border-top-right-radius: 2px;
+	border-bottom-right-radius: 2px;
+	border-bottom-left-radius: 0
+}
+
+.skin-blue.layout-top-nav .main-header>.logo {
+	background-color: #3c8dbc;
+	color: #fff;
+	border-bottom: 0 solid transparent
+}
+
+.skin-blue.layout-top-nav .main-header>.logo:hover {
+	background-color: #3b8ab8
+}
