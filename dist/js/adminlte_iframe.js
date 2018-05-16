@@ -74,7 +74,7 @@ var App = function () {
         }
 
         $(".tab_iframe").css({
-            height: height,
+            height: height-5,
             width: "100%"
         });
 
